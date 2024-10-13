@@ -40,10 +40,10 @@ The below experiment has been conducted on an 8 core machine
 Here, the ratio of user time to real time (CPU utilization) is ≈ 7.3 indicates that the program is effectively using the processing power of about 7.3 cores.
 
 
-# Case2: Distributed actos - multiple machine multiple cores. 
+# Case2: Distributed actors - multiple machine multiple cores. 
 We can increase the problem size 𝑛 that we can solve by adding more computational resources. In this example, I will introduce an additional worker machine. You’ll see that both machines collaborate effectively, achieving results comparable to those produced by a 16-core machine.
 
-To see the code in action, then compile and run the program using the following arguments:
+To see the code in action, compile and run the program using the following arguments:
 
 The client needs to run the code in distributed-actors/client folder as follows:
 ./client lukas <n> <k> $(sysctl -n hw.ncpu) <remote_ip> <remote_port>
